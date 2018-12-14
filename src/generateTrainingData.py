@@ -17,12 +17,12 @@ def generateTrainingData(runName, numberOfLeaves, numberOfSites, numberOfTrees, 
 
     # ----- SIMULATION -----
     # Simulate Trees.
-    treeDir = ('./data/trees/'+runName)
+    treeDir = ('data/trees/'+runName)
     os.mkdir(treeDir)
     treeGenerator(numberOfLeaves, numberOfTrees, treeDir+'/')
 
     # Simulate evolution for each tree saving the leaf nodes to fasta file.
-    fastaDir = ('./data/fasta/'+runName)
+    fastaDir = ('data/fasta/'+runName)
     os.mkdir(fastaDir)
     directory = os.fsencode(treeDir+'/')
     fileNameList = [os.fsdecode(file) for file in os.listdir(directory)]
@@ -71,6 +71,6 @@ def generateTrainingData(runName, numberOfLeaves, numberOfSites, numberOfTrees, 
     print('fastaMatricesNP shape: ', fastaMatricesNP.shape)
 
     # Save the numpy arrays to files.
-    np.save('./data/np/'+runName+'_fastaMatrices', fastaMatricesNP)
-    np.save('./data/np/'+runName+'_topologyMatrices', topologyMatricesNP)
-    np.save('./data/np/'+runName+'_distanceMatrices', distanceMatricesNP)
+    np.save('data/np/'+runName+'_fastaMatrices', fastaMatricesNP)
+    np.save('data/np/'+runName+'_topologyMatrices', topologyMatricesNP)
+    np.save('data/np/'+runName+'_distanceMatrices', distanceMatricesNP)
