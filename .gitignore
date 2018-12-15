@@ -1,3 +1,10 @@
+data/trees/*
+data/fasta/*
+data/nj/*
+data/np/*
+data/keras/*
+data/results/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
