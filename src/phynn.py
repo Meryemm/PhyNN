@@ -78,9 +78,9 @@ def phynn(runName, numberOfLeaves, numberOfSites, numberOfTrees, treeGenerator, 
 # Example Invocation (can be called by running this file)
 phynn(
         runName = 'ExampleRun',
-        numberOfLeaves = 7,
-        numberOfSites = 30,
-        numberOfTrees = 10000,
+        numberOfLeaves = 6,
+        numberOfSites = 20,
+        numberOfTrees = 1000,
         treeGenerator = exampleTreeGenerator,
         evolver = exampleFastaGenerator,
         NNParameters = {

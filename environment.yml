@@ -161,7 +161,7 @@ dependencies:
   - trimal=1.4
   - pip:
     - msgpack==0.5.6
-    - appnope=0.1.0
-    - libgfortran=3.0.1
+    - appnope==0.1.0
+    - libgfortran==3.0.1
 prefix: /Users/ryanvelazquez/anaconda3/envs/phynn
 
